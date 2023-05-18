@@ -1,0 +1,23 @@
+@import "variaveis";
+@import "mixins";
+.card-depoimento {
+    width: 100%;
+    max-width: 38.4rem;
+    padding: 2.3rem 3.2rem;
+    background: rgba(241, 240, 245, 0.555);
+    .card-depoimento-flex {
+        @include flex(row, center, space-between);
+        margin-bottom: 2.1rem;
+        strong {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 112%;
+            letter-spacing: -1px;
+            color: $--Grey-500;
+        }
+    }
+    p {
+        color: $--Grey-400;
+    }
+}
