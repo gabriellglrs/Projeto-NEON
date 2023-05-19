@@ -3,40 +3,35 @@
 .hero-bg {
     background-image: url("../img/Rectangle.png");
     background-size: cover;
-    padding-top: 8rem;
+    padding-top: 80px;
     .hero {
         display: flex;
+        margin-top: 84px;
         .hero-box1 {
+            width: 100%;
+            max-width: 684px;
+            margin-bottom: 135px;
             h3 {
-                color: $--white;
-                margin-bottom: 3.1rem;
+                color: rgba(255, 255, 255, 0.8);
+                font-weight: 600;
+                line-height: 120%;
+                letter-spacing: -0.05rem;
+                margin-bottom: 32px;
             }
             h1 {
-                color: white;
-                width: 68.2rem;
-                margin-bottom: 4.2rem;
+                color: $--white;
+                margin-bottom: 39px;
             }
+
             a {
-                margin-bottom: 5.9rem;
+                margin-bottom: 64px;
             }
             .hero-ul {
                 display: flex;
-                gap: 5.9rem;
-                margin-bottom: 13.5rem;
-                @include flex(row, center, flex-start);
+                gap: 59px;
                 li {
                     display: flex;
-                    align-items: center;
-                    gap: 1.2rem;
-                    .s1 {
-                        max-width: 8.8rem;
-                    }
-                    .s2 {
-                        max-width: 10.1rem;
-                    }
-                    .s3 {
-                        max-width: 12.7rem;
-                    }
+                    gap: 12px;
                     span {
                         color: $--white;
                     }
@@ -44,25 +39,39 @@
             }
         }
         .hero-box2 {
-            flex-grow: 1;
+            width: 100%;
+            max-width: 663px;
+            margin-right: -106px;
             text-align: right;
             h2 {
                 font-weight: 600;
-                font-size: 5.6rem;
+                font-size: 56px;
                 line-height: 84px;
-                letter-spacing: -2px;
                 color: rgba(255, 255, 255, 0.4);
             }
-
-            .hero-vector {
-                width: 66.3rem;
-                margin-top: 15.5rem;
-                margin-left: auto;
-                margin-right: auto;
-                overflow: hidden;
-                float: right;
+            .hero-img {
+                width: 663px;
+                height: 481px;
+                margin-top: 95px;
                 position: relative;
-                bottom: -35px;
+                bottom: -5rem;
+                .img-vector1 {
+                    width: 553px;
+                    float: right;
+                }
+                .img-vector2 {
+                    width: 43.827rem;
+                    position: absolute;
+                    top: 13px;
+                    left: 0;
+                    z-index: 1;
+                }
+                .img-vector3 {
+                    width: 35.295rem;
+                    position: absolute;
+                    top: 144px;
+                    right: 43px;
+                }
             }
         }
     }
