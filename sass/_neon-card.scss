@@ -1,0 +1,136 @@
+@import "variaveis";
+@import "mixins";
+
+.neon-card {
+    margin-top: 129px;
+    display: flex;
+    gap: 8rem;
+    .card1-neon-card {
+        .box1 {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 491.3px;
+            height: 100%;
+            max-height: 581px;
+            position: relative;
+            .img1-neon {
+                max-height: 422px;
+                position: absolute;
+                top: 8rem;
+                left: -120px;
+            }
+            .img2-neon {
+                max-height: 581px;
+                z-index: 1;
+            }
+        }
+        .box2 {
+            width: 100%;
+            max-width: 491.3px;
+            text-align: center;
+            display: flex;
+            @include flex(column, center, flex-start);
+            .img1-box2 {
+                margin-bottom: 21px;
+            }
+            span {
+                color: $--Grey-400;
+                max-width: 270px;
+                margin-bottom: 26px;
+            }
+            .img3-box2 {
+                margin-bottom: 14px;
+            }
+        }
+    }
+    .card2-neon-card {
+        .text-card2 {
+            h2 {
+                margin-bottom: 49px;
+            }
+            a {
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 112%;
+                letter-spacing: -0.5px;
+                color: $--brand-blue;
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    margin-left: 8px;
+                    width: 10px;
+                    height: 1px;
+                    background-color: $--brand-yellow;
+                }
+            }
+            ul {
+                li {
+                    display: flex;
+                    gap: 43px;
+                    padding-bottom: 29px;
+                    border-bottom: 0.1rem solid #e1e0e7;
+                    margin-bottom: 37px;
+                    @include flex(row, center, flex-start);
+                    img {
+                        width: 61px;
+                    }
+                    div {
+                        width: 100%;
+                        h3 {
+                            color: $--Grey-400;
+                        }
+                        span {
+                            color: $--Grey-300;
+                            font-weight: 400;
+                            font-size: 1.8rem;
+                            line-height: 150%;
+                        }
+                    }
+                    .vector14 {
+                        width: 7px;
+                        height: 14px;
+                    }
+                }
+            }
+        }
+        .banner-card2 {
+            background: url(../img/Rectangle.png) no-repeat center center;
+            border-radius: 1rem;
+            width: 100%;
+            max-width: 80rem;
+            margin-top: 14.4rem;
+            display: flex;
+            @include flex(row, center, flex-start);
+            .banner-box1 {
+                padding-left: 5.9rem;
+                h2 {
+                    color: $--white;
+                    margin-top: 7.9rem;
+                    margin-bottom: 1.1rem;
+                }
+                h3 {
+                    color: $--white;
+                    margin-bottom: 0.8rem;
+                }
+                p {
+                    color: $--white;
+                    max-width: 32.7rem;
+                    margin-bottom: 0.7rem;
+                }
+                .btn-flex {
+                    display: flex;
+                    gap: 1.6rem;
+                    margin-bottom: 6.8rem;
+                }
+            }
+            .banner-box2 {
+                img {
+                    position: relative;
+                    right: -5.2rem;
+                }
+            }
+        }
+    }
+}
