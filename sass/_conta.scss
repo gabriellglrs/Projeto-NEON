@@ -1,0 +1,60 @@
+@import "variaveis";
+@import "mixins";
+
+.conta {
+    display: flex;
+    gap: 4rem;
+    margin-top: 12.7rem;
+    .conta-box1 {
+        max-width: 54.2rem;
+        h2 {
+            color: $--Grey-200;
+            margin-bottom: 0.9rem;
+        }
+        .h2 {
+            color: $--Grey-600;
+            margin-bottom: 4.5rem;
+        }
+        .flex-text {
+            display: flex;
+            gap: 2.6rem;
+            margin-bottom: 4.5rem;
+            @include flex(row, center, flex-start);
+            img {
+                width: 4.5rem;
+            }
+            h4 {
+                color: $--Grey-400;
+            }
+            span {
+                color: $--Grey-300;
+            }
+        }
+    }
+    .conta-box2 {
+        margin-right: -12rem;
+        .box2-img {
+            height: 59.8rem;
+            width: 71.1rem;
+            position: relative;
+            .img1 {
+                position: absolute;
+                right: 11rem;
+                bottom: 50px;
+                z-index: 1;
+            }
+            .img2 {
+                position: absolute;
+                top: 5rem;
+                left: 0rem;
+                z-index: 1;
+            }
+            .img3 {
+                position: absolute;
+                right: -6rem;
+                bottom: 0;
+                width: 51rem;
+            }
+        }
+    }
+}

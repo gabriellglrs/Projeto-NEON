@@ -5,6 +5,7 @@
     max-width: 38.4rem;
     padding: 2.3rem 3.2rem;
     background: rgba(241, 240, 245, 0.555);
+    border-radius: 0.8rem;
     .card-depoimento-flex {
         @include flex(row, center, space-between);
         margin-bottom: 2.1rem;
