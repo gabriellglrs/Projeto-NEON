@@ -1,0 +1,28 @@
+@import "mixins";
+@import "variaveis";
+
+.footer-bg {
+    background-color: $--brand-blue;
+    height: 61.5rem;
+    margin-top: 8.6rem;
+    .footer {
+        .header-footer {
+            padding-top: 4.8rem;
+            @include flex(row, center, space-between);
+            .ul-footer {
+                gap: 3rem;
+                @include flex(row, center, space-between);
+                span {
+                    line-height: 125%;
+                    color: rgba(255, 255, 255, 0.7);
+                }
+            }
+        }
+        .elemento {
+            height: 0.2rem;
+            width: 100%;
+            margin-top: 4.8rem;
+            background-color: rgba(73, 196, 253, 0.2);
+        }
+    }
+}
